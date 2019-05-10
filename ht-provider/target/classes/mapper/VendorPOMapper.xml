@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.VendorPOMapper" >
+    <resultMap id="VendorPOResultMapper" type="com.msyt.entity.VendorPO" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="po_idx" property="poId" jdbcType="INTEGER" />
+        <result column="vendor_idx" property="vendorId" jdbcType="INTEGER" />
+        <result column="item_range_count" property="itemRangeCount" jdbcType="INTEGER" />
+        <result column="item_total" property="itemTotal" jdbcType="INTEGER" />
+        <result column="total_money" property="totalMoney" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        version,status, po_idx, vendor_idx,item_range_count, item_total, total_money,create_time,update_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        #{version},#{status}, #{poId}, #{vendorId},#{itemRangeCount}, #{itemTotal}, #{totalMoney}, #{createTime}, #{updateTime}
+    </sql>
+
+    <select id="findAll" resultMap="VendorPOResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_vendor_purchase_order
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.VendorPO" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_vendor_purchase_order (<include refid="Base_Column_fields" />)
+        values (<include refid="Base_Column_fields_value"/>)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_vendor_purchase_order where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.VendorPO" >
+        update tb_vendor_purchase_order
+        <set >
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="poId != null" >
+                po_idx = #{poId},
+            </if>
+            <if test="vendorId != null" >
+                vendor_idx = #{vendorId},
+            </if>
+            <if test="itemRangeCount != null" >
+                item_range_count = #{itemRangeCount},
+            </if>
+            <if test="itemTotal != null" >
+                item_total = #{itemTotal},
+            </if>
+            <if test="totalMoney != null" >
+                total_money = #{totalMoney},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="VendorPOResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+          tb_vendor_purchase_order
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.VendorPO"  resultMap="VendorPOResultMapper">
+        SELECT
+        idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_vendor_purchase_order
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="poId != null and poId !=''" >
+                and po_idx = #{poId}
+            </if>
+            <if test="vendorId != null and vendorId !=''" >
+                and vendor_idx = #{vendorId}
+            </if>
+            <if test="itemRangeCount != null and itemRangeCount !=''" >
+                and item_range_count = #{itemRangeCount}
+            </if>
+            <if test="itemTotal != null and itemTotal !=''" >
+                and item_total = #{itemTotal}
+            </if>
+            <if test="totalMoney != null and totalMoney !=''" >
+                and total_money = #{totalMoney}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+</mapper>

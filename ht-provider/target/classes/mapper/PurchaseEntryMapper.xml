@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.PurchaseEntryMapper" >
+    <resultMap id="PurchaseEntryResultMapper" type="com.msyt.entity.PurchaseEntry" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="po_idx" property="poId" jdbcType="INTEGER" />
+        <result column="category" property="category" jdbcType="VARCHAR" />
+        <result column="item_code" property="itemCode" jdbcType="VARCHAR" />
+        <result column="brand" property="brand" jdbcType="VARCHAR" />
+        <result column="item_desc" property="itemDesc" jdbcType="VARCHAR" />
+        <result column="bar_code" property="barCode" jdbcType="VARCHAR" />
+        <result column="vendor_count" property="vendorCount" jdbcType="INTEGER" />
+        <result column="d_value" property="dValue" jdbcType="INTEGER" />
+        <result column="avg_purchase_price" property="avgPurchasePrice" jdbcType="INTEGER" />
+        <result column="total_ship_day" property="totalShipDay" jdbcType="INTEGER" />
+        <result column="total_purchase_count" property="totalPurchaseCount" jdbcType="INTEGER" />
+        <result column="msg" property="msg" jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        po_idx,
+        version,
+        status,
+        category,
+        item_code,
+        brand,
+        item_desc,
+        bar_code,
+        vendor_count,
+        d_value,
+        avg_purchase_price,
+        total_ship_day,
+        total_purchase_count,
+        msg,
+        create_time,
+        update_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        #{poId},
+        #{version},
+        #{status},
+        #{itemCode},
+        #{category},
+        #{brand},
+        #{barCode},
+        #{itemDesc},
+        #{vendorCount},
+        #{dValue},
+        #{avgPurchasePrice},
+        #{totalShipDay},
+        #{totalPurchaseCount},
+        #{msg},
+        #{createTime},
+        #{updateTime}
+    </sql>
+
+    <select id="findAll" resultMap="PurchaseEntryResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_purchase_order_entry
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.PurchaseEntry" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_purchase_order_entry (<include refid="Base_Column_fields" />)
+        values (<include refid="Base_Column_fields_value"/>)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_purchase_order_entry where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.PurchaseEntry" >
+        update tb_purchase_order_entry
+        <set >
+            <if test="poId != null" >
+                po_idx = #{poId},
+            </if>
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="category != null" >
+                category = #{category},
+            </if>
+            <if test="itemCode != null" >
+                item_code = #{itemCode},
+            </if>
+            <if test="brand != null" >
+                brand = #{brand},
+            </if>
+            <if test="itemDesc != null" >
+                item_desc = #{itemDesc},
+            </if>
+            <if test="barCode != null" >
+                bar_code = #{barCode},
+            </if>
+            <if test="vendorCount != null" >
+                vendor_count = #{vendorCount},
+            </if>
+            <if test="dValue != null" >
+                d_value = #{dValue},
+            </if>
+            <if test="avgPurchasePrice != null" >
+                avg_purchase_price = #{avgPurchasePrice},
+            </if>
+            <if test="totalShipDay != null" >
+                total_ship_day = #{totalShipDay},
+            </if>
+            <if test="totalPurchaseCount != null" >
+                total_purchase_count = #{totalPurchaseCount},
+            </if>
+            <if test="msg != null" >
+                msg = #{msg},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="PurchaseEntryResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+          tb_purchase_order_entry
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.PurchaseEntry"  resultMap="PurchaseEntryResultMapper">
+        SELECT
+        idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_purchase_order_entry
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="poId != null and poId !=''" >
+                and po_idx = #{poId}
+            </if>
+            <if test="category != null and category !=''" >
+                and category = #{category}
+            </if>
+            <if test="itemCode != null and itemCode !=''" >
+                and item_code = #{itemCode}
+            </if>
+            <if test="brand != null and brand !=''" >
+                and brand = #{brand}
+            </if>
+            <if test="itemDesc != null and itemDesc !=''" >
+                and item_desc = #{itemDesc}
+            </if>
+            <if test="barCode != null and barCode !=''" >
+                and bar_code = #{barCode}
+            </if>
+            <if test="vendorCount != null and vendorCount !=''" >
+                and vendor_count = #{vendorCount}
+            </if>
+            <if test="dValue != null and dValue !=''" >
+                and d_value = #{dValue}
+            </if>
+            <if test="avgPurchasePrice != null and avgPurchasePrice !=''" >
+                and avg_purchase_price = #{avgPurchasePrice}
+            </if>
+            <if test="totalShipDay != null and totalShipDay !=''" >
+                and total_ship_day = #{totalShipDay}
+            </if>
+            <if test="totalPurchaseCount != null and totalPurchaseCount !=''" >
+                and total_purchase_count = #{totalPurchaseCount}
+            </if>
+            <if test="msg != null and msg !=''" >
+                and msg = #{msg}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <insert id="batchAdd" parameterType="java.util.List">
+        insert into tb_purchase_order_entry (<include refid="Base_Column_fields" />)
+        values
+        <foreach collection="purchaseEntryList" item="purchaseEntry" index="index" separator=",">
+            (#{purchaseEntry.poId,jdbcType=INTEGER},
+            #{purchaseEntry.version,jdbcType=INTEGER},
+            #{purchaseEntry.status,jdbcType=INTEGER},
+            #{purchaseEntry.category,jdbcType=VARCHAR},
+            #{purchaseEntry.itemCode,jdbcType=VARCHAR},
+            #{purchaseEntry.brand,jdbcType=VARCHAR},
+            #{purchaseEntry.itemDesc,jdbcType=VARCHAR},
+            #{purchaseEntry.barCode,jdbcType=VARCHAR},
+            #{purchaseEntry.vendorCount,jdbcType=NUMERIC},
+            #{purchaseEntry.dValue,jdbcType=INTEGER},
+            #{purchaseEntry.avgPurchasePrice,jdbcType=NUMERIC},
+            #{purchaseEntry.totalShipDay,jdbcType=NUMERIC},
+            #{purchaseEntry.totalPurchaseCount,jdbcType=INTEGER},
+            #{purchaseEntry.msg,jdbcType=VARCHAR},
+            #{purchaseEntry.createTime,jdbcType=TIMESTAMP},
+            #{purchaseEntry.updateTime,jdbcType=TIMESTAMP})
+        </foreach>
+    </insert>
+
+    <update id="batchUpdate" parameterType="java.util.List">
+        <if test="purchaseEntryList!= null and purchaseEntryList.size() > 0">
+            <foreach collection="purchaseEntryList" item="purchaseEntry" index="index" open="" close="" separator=";">
+                update tb_purchase_order_entry
+                <set>
+                    <if test="purchaseEntry.poId != null">
+                        po_idx = #{purchaseEntry.poId},
+                    </if>
+                    <if test="purchaseEntry.version != null">
+                        version = #{purchaseEntry.version},
+                    </if>
+                    <if test="purchaseEntry.status != null">
+                        status = #{purchaseEntry.status},
+                    </if>
+                    <if test="purchaseEntry.category != null">
+                        category = #{purchaseEntry.category},
+                    </if>
+                    <if test="purchaseEntry.itemCode != null">
+                        item_code = #{purchaseEntry.itemCode},
+                    </if>
+                    <if test="purchaseEntry.brand != null">
+                        brand = #{purchaseEntry.brand},
+                    </if>
+                    <if test="purchaseEntry.itemDesc != null">
+                        item_desc = #{purchaseEntry.itemDesc},
+                    </if>
+                    <if test="purchaseEntry.barCode != null">
+                        bar_code = #{purchaseEntry.barCode},
+                    </if>
+                    <if test="purchaseEntry.vendorCount != null">
+                        vendor_count = #{purchaseEntry.vendorCount},
+                    </if>
+                    <if test="purchaseEntry.dValue != null">
+                        d_value = #{purchaseEntry.dValue},
+                    </if>
+                    <if test="purchaseEntry.avgPurchasePrice != null">
+                        avg_purchase_price = #{purchaseEntry.avgPurchasePrice},
+                    </if>
+                    <if test="purchaseEntry.totalShipDay != null">
+                        total_ship_day = #{purchaseEntry.totalShipDay},
+                    </if>
+                    <if test="purchaseEntry.totalPurchaseCount != null">
+                        total_purchase_count = #{purchaseEntry.totalPurchaseCount},
+                    </if>
+                    <if test="purchaseEntry.msg != null">
+                        msg = #{purchaseEntry.msg},
+                    </if>
+                    <if test="purchaseEntry.createTime != null">
+                        create_time = #{purchaseEntry.createTime},
+                    </if>
+                    <if test="purchaseEntry.updateTime != null">
+                        update_time = #{purchaseEntry.updateTime},
+                    </if>
+                </set>
+                where idx = ${purchaseEntry.id}
+            </foreach>
+        </if>
+    </update>
+
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/demo.iml" filepath="$PROJECT_DIR$/.idea/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ht-api/ht-api.iml" filepath="$PROJECT_DIR$/ht-api/ht-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ht-consumer/ht-consumer.iml" filepath="$PROJECT_DIR$/ht-consumer/ht-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ht-parent/ht-parent.iml" filepath="$PROJECT_DIR$/ht-parent/ht-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ht-provider/ht-provider.iml" filepath="$PROJECT_DIR$/ht-provider/ht-provider.iml" />
+    </modules>
+  </component>
+</project>

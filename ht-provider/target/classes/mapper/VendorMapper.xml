@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.VendorMapper" >
+    <resultMap id="VendorResultMapper" type="com.msyt.entity.VendorEntity" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="vendor_name" property="vendorName" jdbcType="VARCHAR" />
+        <result column="address" property="address" jdbcType="VARCHAR" />
+        <result column="country" property="country" jdbcType="VARCHAR" />
+        <result column="city" property="city" jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        version,status,remark,vendor_name, address, country, city,create_time,update_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        (#{version}, #{status},#{remark},#{vendorName}, #{address}, #{country}, #{city}, #{createTime}, #{updateTime})
+    </sql>
+
+    <select id="findAll" resultMap="VendorResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.VendorEntity" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_vendor (<include refid="Base_Column_fields" />)
+        values <include refid="Base_Column_fields_value"/>
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_vendor where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.VendorEntity" >
+        update tb_vendor
+        <set >
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="remark != null" >
+                remark = #{remark},
+            </if>
+            <if test="vendorName != null" >
+                vendor_name = #{vendorName},
+            </if>
+            <if test="address != null" >
+                address = #{address},
+            </if>
+            <if test="country != null" >
+                country = #{country},
+            </if>
+            <if test="city != null" >
+                city = #{city},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="VendorResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.VendorEntity"  resultMap="VendorResultMapper">
+        SELECT
+        idx, <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="remark != null and remark !=''" >
+                and remark = #{remark}
+            </if>
+            <if test="vendorName != null and vendorName !=''" >
+                and vendor_name = #{vendorName}
+            </if>
+            <if test="address != null and address !=''" >
+                and address = #{address}
+            </if>
+            <if test="country != null and country !=''" >
+                and country = #{country}
+            </if>
+            <if test="city != null and city !=''" >
+                and city = #{city}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+</mapper>

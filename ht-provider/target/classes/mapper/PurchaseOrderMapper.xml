@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.PurchaseOrderMapper" >
+    <resultMap id="PurchaseOrderResultMapper" type="com.msyt.entity.PurchaseOrder" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="remark" property="remark" jdbcType="VARCHAR" />
+        <result column="status" property="status" jdbcType="VARCHAR" />
+        <result column="chlid_po_num" property="chlidPoNum" jdbcType="INTEGER" />
+        <result column="item_total" property="itemTotal" jdbcType="INTEGER" />
+        <result column="total_money" property="totalMoney" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="complete_time" property="completeTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        version,remark,status, chlid_po_num, item_total, total_money,create_time,update_time,complete_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        #{version},#{remark},#{status}, #{chlidPoNum}, #{itemTotal}, #{totalMoney}, #{createTime}, #{updateTime}, #{completeTime}
+    </sql>
+
+    <select id="findAll" resultMap="PurchaseOrderResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_purchase_order
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.PurchaseOrder" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_purchase_order (<include refid="Base_Column_fields" />)
+        values (<include refid="Base_Column_fields_value"/>)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_purchase_order where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.PurchaseOrder" >
+        update tb_purchase_order
+        <set >
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="remark != null" >
+                remark = #{remark},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="chlidPoNum != null" >
+                chlid_po_num = #{chlidPoNum},
+            </if>
+            <if test="itemTotal != null" >
+                item_total = #{itemTotal},
+            </if>
+            <if test="totalMoney != null" >
+                total_money = #{totalMoney},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+            <if test="completeTime != null" >
+                complete_time = #{completeTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="PurchaseOrderResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+          tb_purchase_order
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.PurchaseOrder"  resultMap="PurchaseOrderResultMapper">
+        SELECT
+        idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_purchase_order
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="remark != null and remark !=''" >
+                and remark = #{remark}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="chlidPoNum != null and chlidPoNum !=''" >
+                and chlid_po_num = #{chlidPoNum}
+            </if>
+            <if test="itemTotal != null and itemTotal !=''" >
+                and item_total = #{itemTotal}
+            </if>
+            <if test="totalMoney != null and totalMoney !=''" >
+                and total_money = #{totalMoney}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+            <if test="completeTime != null and updateTime !=''">
+                and complete_time = #{completeTime}
+            </if>
+        </where>
+    </select>
+
+</mapper>

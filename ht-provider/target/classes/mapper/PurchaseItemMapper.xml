@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.PurchaseItemMapper" >
+    <resultMap id="PurchaseItemResultMapper" type="com.msyt.entity.PurchaseItem" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="po_entry_idx" property="poEntryId" jdbcType="INTEGER" />
+        <result column="po_idx" property="poId" jdbcType="INTEGER" />
+        <result column="item_code" property="itemCode" jdbcType="VARCHAR" />
+        <result column="vendor_idx" property="vendorId" jdbcType="INTEGER" />
+        <result column="vendor_name" property="vendorName" jdbcType="VARCHAR" />
+        <result column="stock" property="stock" jdbcType="INTEGER" />
+        <result column="item_desc" property="itemDesc" jdbcType="VARCHAR" />
+        <result column="supply_price" property="supplyPrice" jdbcType="INTEGER" />
+        <result column="currency" property="currency" jdbcType="VARCHAR" />
+        <result column="exchange_rate" property="exchangeRate" jdbcType="NUMERIC" />
+        <result column="purchase_price" property="purchasePrice" jdbcType="INTEGER" />
+        <result column="ship_day" property="shipDay" jdbcType="INTEGER" />
+        <result column="purchase_count" property="purchaseCount" jdbcType="INTEGER" />
+        <result column="ship_type" property="shipType" jdbcType="VARCHAR" />
+        <result column="contacts_idx" property="contactsId" jdbcType="INTEGER" />
+        <result column="msg" property="msg" jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        version,
+        status,
+        po_entry_idx,
+        po_idx,
+        item_code,
+        vendor_idx,
+        vendor_name,
+        stock,
+        item_desc,
+        supply_price,
+        currency,
+        exchange_rate,
+        purchase_price,
+        ship_day,
+        purchase_count,
+        ship_type,
+        contacts_idx,
+        msg,
+        create_time,
+        update_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        #{version},
+        #{status},
+        #{poEntryId},
+        #{poId},
+        #{itemCode},
+        #{vendorId},
+        #{vendorName},
+        #{stock},
+        #{itemDesc},
+        #{supplyPrice},
+        #{currency},
+        #{exchangeRate},
+        #{purchasePrice},
+        #{shipDay},
+        #{purchaseCount},
+        #{shipType},
+        #{contactsId},
+        #{msg},
+        #{createTime},
+        #{updateTime}
+    </sql>
+
+    <select id="findAll" resultMap="PurchaseItemResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_purchase_order_item
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.PurchaseItem" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_purchase_order_item (<include refid="Base_Column_fields" />)
+        values (<include refid="Base_Column_fields_value"/>)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_purchase_order_item where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.PurchaseItem" >
+        update tb_purchase_order_item
+        <set >
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="poEntryId != null" >
+                po_entry_idx = #{poEntryId},
+            </if>
+            <if test="poId != null" >
+                po_idx = #{poId},
+            </if>
+            <if test="itemCode != null" >
+                item_code = #{itemCode},
+            </if>
+            <if test="vendorId != null" >
+                vendor_idx = #{vendorId},
+            </if>
+            <if test="vendorName != null" >
+                vendor_name = #{vendorName},
+            </if>
+            <if test="stock != null" >
+                stock = #{stock},
+            </if>
+            <if test="itemDesc != null" >
+                item_desc = #{itemDesc},
+            </if>
+            <if test="supplyPrice != null" >
+                supply_price = #{supplyPrice},
+            </if>
+            <if test="currency != null" >
+                currency = #{currency},
+            </if>
+            <if test="exchangeRate != null" >
+                exchange_rate = #{exchangeRate},
+            </if>
+            <if test="purchasePrice != null" >
+                purchase_price = #{purchasePrice},
+            </if>
+            <if test="shipDay != null" >
+                ship_day = #{shipDay},
+            </if>
+            <if test="purchaseCount != null" >
+                purchase_count = #{purchaseCount},
+            </if>
+            <if test="shipType != null" >
+                ship_type = #{shipType},
+            </if>
+            <if test="contactsId != null" >
+                contacts_idx = #{contactsId},
+            </if>
+            <if test="msg != null" >
+                msg = #{msg},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="PurchaseItemResultMapper">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+          tb_purchase_order_item
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.PurchaseItem"  resultMap="PurchaseItemResultMapper">
+        SELECT
+        idx, <include refid="Base_Column_fields" />
+        FROM
+            tb_purchase_order_item
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="poEntryId != null and poEntryId !=''" >
+                and po_entry_idx = #{poEntryId}
+            </if>
+            <if test="poId != null and poId !=''" >
+                and po_idx = #{poId}
+            </if>
+            <if test="itemCode != null and itemCode !=''" >
+                and item_code = #{itemCode}
+            </if>
+            <if test="vendorId != null and vendorId !=''" >
+                and vendor_idx = #{vendorId}
+            </if>
+            <if test="vendorName != null and vendorName !=''" >
+                and vendor_name = #{vendorName}
+            </if>
+            <if test="stock != null and stock !=''" >
+                and stock = #{stock}
+            </if>
+            <if test="itemDesc != null and itemDesc !=''" >
+                and item_desc = #{itemDesc}
+            </if>
+            <if test="supplyPrice != null and supplyPrice !=''" >
+                and supply_price = #{supplyPrice}
+            </if>
+            <if test="currency != null and currency !=''" >
+                and currency = #{currency}
+            </if>
+            <if test="exchangeRate != null and exchangeRate !=''" >
+                and exchange_rate = #{exchangeRate}
+            </if>
+            <if test="purchasePrice != null and purchasePrice !=''" >
+                and purchase_price = #{purchasePrice}
+            </if>
+            <if test="shipDay != null and shipDay !=''" >
+                and ship_day = #{shipDay}
+            </if>
+            <if test="purchaseCount != null and purchaseCount !=''" >
+                and purchase_count = #{purchaseCount}
+            </if>
+            <if test="shipType != null and shipType !=''" >
+                and ship_type = #{shipType}
+            </if>
+            <if test="contactsId != null and contactsId !=''" >
+                and contacts_idx = #{contactsId}
+            </if>
+            <if test="msg != null and msg !=''" >
+                and msg = #{msg}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <insert id="batchAdd" parameterType="java.util.List">
+        insert into tb_purchase_order_item (<include refid="Base_Column_fields" />)
+        values
+        <foreach collection="purchaseItemList" item="purchaseItem" index="index" separator=",">
+            (#{purchaseItem.version,jdbcType=INTEGER},
+            #{purchaseItem.status,jdbcType=INTEGER},
+            #{purchaseItem.poEntryId,jdbcType=INTEGER},
+            #{purchaseItem.poId,jdbcType=INTEGER},
+            #{purchaseItem.itemCode,jdbcType=VARCHAR},
+            #{purchaseItem.vendorId,jdbcType=INTEGER},
+            #{purchaseItem.vendorName,jdbcType=VARCHAR},
+            #{purchaseItem.stock,jdbcType=INTEGER},
+            #{purchaseItem.itemDesc,jdbcType=VARCHAR},
+            #{purchaseItem.supplyPrice,jdbcType=NUMERIC},
+            #{purchaseItem.currency,jdbcType=INTEGER},
+            #{purchaseItem.exchangeRate,jdbcType=NUMERIC},
+            #{purchaseItem.purchasePrice,jdbcType=NUMERIC},
+            #{purchaseItem.shipDay,jdbcType=INTEGER},
+            #{purchaseItem.purchaseCount,jdbcType=INTEGER},
+            #{purchaseItem.shipType,jdbcType=VARCHAR},
+            #{purchaseItem.contactsId,jdbcType=INTEGER},
+            #{purchaseItem.msg,jdbcType=VARCHAR},
+            #{purchaseItem.createTime,jdbcType=TIMESTAMP},
+            #{purchaseItem.updateTime,jdbcType=TIMESTAMP})
+        </foreach>
+    </insert>
+
+    <update id="updateByEntryIds" parameterType="java.util.Map">
+        update tb_purchase_order_item
+        set po_idx = #{poId}
+        where po_entry_idx in
+            <foreach collection="poEntryIds" item="item" index="index" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+    </update>
+
+</mapper>

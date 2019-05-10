@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ht-api:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5588d181-bb36-4b91-b9fd-7e10c1dac760" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/ht-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/ht-parent/target/" />
+    <ignored path="$PROJECT_DIR$/ht-provider/target/" />
+    <ignored path="$PROJECT_DIR$/ht-api/target/" />
+    <ignored path="ht-provider/.classpath" />
+    <ignored path="ht-consumer/.classpath" />
+    <ignored path="ht-api/.classpath" />
+    <ignored path="ht-provider/.project" />
+    <ignored path="ht-consumer/.project" />
+    <ignored path="ht-api/.project" />
+    <ignored path=".idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" />
+    <ignored path=".idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" />
+    <ignored path=".idea/libraries/Maven__com_101tec_zkclient_0_10.xml" />
+    <ignored path=".idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_actuator_0_1_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_autoconfigure_0_1_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_alibaba_boot_dubbo_spring_boot_starter_0_1_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_alibaba_druid_1_0_25.xml" />
+    <ignored path=".idea/libraries/Maven__com_alibaba_dubbo_2_5_10.xml" />
+    <ignored path=".idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_9.xml" />
+    <ignored path=".idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_9.xml" />
+    <ignored path=".idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" />
+    <ignored path=".idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
+    <ignored path=".idea/libraries/Maven__io_netty_netty_3_10_5_Final.xml" />
+    <ignored path=".idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
+    <ignored path=".idea/libraries/Maven__jline_jline_0_9_94.xml" />
+    <ignored path=".idea/libraries/Maven__junit_junit_4_12.xml" />
+    <ignored path=".idea/libraries/Maven__log4j_log4j_1_2_16.xml" />
+    <ignored path=".idea/libraries/Maven__mysql_mysql_connector_java_5_1_43.xml" />
+    <ignored path=".idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" />
+    <ignored path=".idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_curator_curator_client_2_12_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_curator_curator_framework_2_12_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_16.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_16.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_16.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_16.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_16.xml" />
+    <ignored path=".idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_9.xml" />
+    <ignored path=".idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_5_Final.xml" />
+    <ignored path=".idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
+    <ignored path=".idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" />
+    <ignored path=".idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" />
+    <ignored path=".idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_mybatis_3_4_2.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_2_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
+    <ignored path=".idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" />
+    <ignored path=".idea/libraries/Maven__org_projectlombok_lombok_1_16_18.xml" />
+    <ignored path=".idea/libraries/Maven__org_projectlombok_lombok_1_16_6.xml" />
+    <ignored path=".idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_12_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_6_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_aop_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_beans_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_context_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_core_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_expression_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_jdbc_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_test_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_tx_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_web_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_springframework_spring_webmvc_4_3_10_RELEASE.xml" />
+    <ignored path=".idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/modules.xml" />
+    <ignored path="ht-api/.settings/org.eclipse.core.resources.prefs" />
+    <ignored path="ht-provider/.settings/org.eclipse.core.resources.prefs" />
+    <ignored path="ht-consumer/.settings/org.eclipse.core.resources.prefs" />
+    <ignored path="ht-api/.settings/org.eclipse.jdt.core.prefs" />
+    <ignored path="ht-provider/.settings/org.eclipse.jdt.core.prefs" />
+    <ignored path="ht-consumer/.settings/org.eclipse.jdt.core.prefs" />
+    <ignored path="ht-api/.settings/org.eclipse.m2e.core.prefs" />
+    <ignored path="ht-provider/.settings/org.eclipse.m2e.core.prefs" />
+    <ignored path="ht-consumer/.settings/org.eclipse.m2e.core.prefs" />
+    <ignored path="ht-provider/.settings/org.hibernate.eclipse.console.prefs" />
+    <ignored path="ht-consumer/.settings/org.hibernate.eclipse.console.prefs" />
+    <ignored path=".idea/vcs.xml" />
+    <ignored path=".idea/uiDesigner.xml" />
+    <ignored path="ht-provider/ht-provider.iml" />
+    <ignored path="ht-parent/ht-parent.iml" />
+    <ignored path="ht-consumer/ht-consumer.iml" />
+    <ignored path="ht-api/ht-api.iml" />
+    <ignored path=".idea/demo.iml" />
+    <ignored path=".idea/encodings.xml" />
+    <ignored path=".idea/checkstyle-idea.xml" />
+    <ignored path=".idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="demo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindBugs-IDEA-Workspace">
+    <toolWindowEditorPreview>false</toolWindowEditorPreview>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dValue</find>
+      <find>batchUpdate</find>
+      <find>saveAdd</find>
+      <find>insert</find>
+      <find>purchaseEntryList</find>
+      <find>d_value</find>
+      <find>po_entry_id_</find>
+      <find>purchaseOrderService</find>
+      <find>PurchaseOrderMapper</find>
+      <find>purchaseOrder</find>
+      <find>po</find>
+      <find>待确认</find>
+      <find>create_time_</find>
+      <find>complete_time_</find>
+      <find>update_time_</find>
+      <find>vendor_id_</find>
+      <find>vendor_name_</find>
+      <find>id_</find>
+      <find>total_money_</find>
+      <find>city_</find>
+      <find>decimal</find>
+      <find>updateByEntryIds</find>
+      <find>ApiResult</find>
+      <find>vendor_contacts</find>
+      <find>purchase_order_entry</find>
+      <find>purchase_order_item</find>
+      <find>purchase_order</find>
+      <find>vendor_item</find>
+      <find>vendor_purchase_order</find>
+      <find>vendor</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>IPurchaseEntryService</replace>
+      <replace>total_purchase_count_</replace>
+      <replace>PurchaseEntryMapper</replace>
+      <replace>purchaseEntry1</replace>
+      <replace>purchase_order_Entry</replace>
+      <replace>purchase_order_entry</replace>
+      <replace>purchaseEntryService</replace>
+      <replace>purchaseEntry</replace>
+      <replace>子单商品</replace>
+      <replace>vendorId</replace>
+      <replace>vendor_purchase_order</replace>
+      <replace>vendorPO</replace>
+      <replace>供应商采购单</replace>
+      <replace>complete_time</replace>
+      <replace>create_time</replace>
+      <replace>update_time</replace>
+      <replace>item_code</replace>
+      <replace>vendor_idx</replace>
+      <replace>vendor_name</replace>
+      <replace>idx</replace>
+      <replace>city</replace>
+      <replace>total_money</replace>
+      <replace>CommonResult</replace>
+      <replace>tb_vendor_contacts</replace>
+      <replace>tb_purchase_order_entry</replace>
+      <replace>tb_purchase_order_item</replace>
+      <replace>tb_purchase_order</replace>
+      <replace>tb_vendor_item</replace>
+      <replace>tb_vendor_purchase_order</replace>
+      <replace>_item</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/VendorEntity.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/VendorItem.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/vo/VendorItemVo.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/ContactsMapper.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/VendorPO.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/PurchaseOrder.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/PurchaseEntryMapper.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/PurchaseItemMapper.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/PurchaseOrderMapper.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/VendorItemMapper.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/VendorMapper.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/ContactsService.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/ContactsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/PurchaseEntryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/PurchaseOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/VendorItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/VendorPOServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/PurchaseEntryService.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/PurchaseOrderService.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/VendorItemService.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/VendorPOService.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/VendorService.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/PurchaseEntry.java" />
+        <option value="$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/PurchaseItemService.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/ContactsController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/PurchaseEntryController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/PurchaseItemController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/PurchaseOrderController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/VendorController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/VendorItemController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/VendorPOController.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/utils/DemoUtils.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/CommonResult.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/ContactsTest.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseEntryTest.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseItemTest.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseOrderTest.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/VendorItemTest.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/VendorPOTest.java" />
+        <option value="$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/VendorTest.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/VendorPOMapper.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/PurchaseItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/VendorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/ContactsMapper.xml" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/PurchaseEntryMapper.xml" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/PurchaseItemMapper.xml" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/PurchaseOrderMapper.xml" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/VendorItemMapper.xml" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/VendorMapper.xml" />
+        <option value="$PROJECT_DIR$/ht-provider/src/main/resources/mapper/VendorPOMapper.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Users\onion\.m2\repository" />
+        <option name="mavenHome" value="E:/dev/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="C:\Users\onion\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-3" />
+    <option name="width" value="1460" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Tests'; set:Tests; class com.intellij.psi.search.scope.TestsScope">
+          <expand>
+            <path>
+              <item name="demo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="ht-consumer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="demo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="ht-consumer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
+          <expand>
+            <path>
+              <item name="demo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="ht-consumer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="demo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="ht-consumer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="demo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="ht-consumer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="demo" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="ht-consumer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ht-api" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="demo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ht-api" type="616d4139:PackageViewModuleNode" />
+              <item name="com.msyt" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="demo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ht-api" type="616d4139:PackageViewModuleNode" />
+              <item name="com.msyt" type="1f31426a:PackageElementNode" />
+              <item name="entity" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="demo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ht-api" type="616d4139:PackageViewModuleNode" />
+              <item name="com.msyt" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="demo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ht-api" type="616d4139:PackageViewModuleNode" />
+              <item name="com.msyt" type="1f31426a:PackageElementNode" />
+              <item name="vo" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556529115988" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.msyt.constants" />
+      <recent name="com.msyt" />
+      <recent name="com.msyt.service.impl" />
+      <recent name="com.msyt.service" />
+      <recent name="com.msyt.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitProjects\demo\ht-provider\src\main\java\com\msyt" />
+      <recent name="E:\GitProjects\demo\ht-provider\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.VendorPOTest.testFindAll">
+    <configuration name="PurchaseItemTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msyt" />
+      <option name="MAIN_CLASS_NAME" value="com.msyt.PurchaseItemTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseOrderTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msyt" />
+      <option name="MAIN_CLASS_NAME" value="com.msyt.PurchaseOrderTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendorItemTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msyt" />
+      <option name="MAIN_CLASS_NAME" value="com.msyt.VendorItemTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendorPOTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msyt" />
+      <option name="MAIN_CLASS_NAME" value="com.msyt.VendorPOTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendorTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ht-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msyt" />
+      <option name="MAIN_CLASS_NAME" value="com.msyt.VendorTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ht-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msyt.ConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ht-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msyt.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.msyt.ProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.PurchaseItemTest.testFindAll" />
+      <item itemvalue="JUnit.PurchaseOrderTest.testFindAll" />
+      <item itemvalue="JUnit.VendorItemTest.testFindAll" />
+      <item itemvalue="JUnit.VendorPOTest.testFindAll" />
+      <item itemvalue="JUnit.VendorTest.testFindAll" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.ProviderApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VendorPOTest.testFindAll" />
+        <item itemvalue="JUnit.VendorTest.testFindAll" />
+        <item itemvalue="JUnit.VendorItemTest.testFindAll" />
+        <item itemvalue="JUnit.PurchaseOrderTest.testFindAll" />
+        <item itemvalue="JUnit.PurchaseItemTest.testFindAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5588d181-bb36-4b91-b9fd-7e10c1dac760" name="Default Changelist" comment="" />
+      <created>1555638811868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555638811868</updated>
+      <workItem from="1555638813122" duration="10238000" />
+      <workItem from="1555665917716" duration="7265000" />
+      <workItem from="1555673365305" duration="216000" />
+      <workItem from="1555673860681" duration="609000" />
+      <workItem from="1555723414932" duration="2823000" />
+      <workItem from="1555726415166" duration="50000" />
+      <workItem from="1555726660388" duration="20515000" />
+      <workItem from="1555896426402" duration="124073000" />
+      <workItem from="1556268686861" duration="705000" />
+      <workItem from="1556501140998" duration="18324000" />
+      <workItem from="1556529395203" duration="1031000" />
+      <workItem from="1556587883475" duration="518000" />
+    </task>
+    <task id="LOCAL-00001" summary="demo">
+      <created>1555674112616</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555674112616</updated>
+    </task>
+    <task id="LOCAL-00002" summary="demo">
+      <created>1555726112973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555726112973</updated>
+    </task>
+    <task id="LOCAL-00003" summary="demo">
+      <created>1555756277879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555756277879</updated>
+    </task>
+    <task id="LOCAL-00004" summary="供应商管理：供应商、关联联系人、关联商品增删改查+测试用例">
+      <created>1555936789868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555936789868</updated>
+    </task>
+    <task id="LOCAL-00005" summary="demo">
+      <created>1555937458617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1555937458617</updated>
+    </task>
+    <task id="LOCAL-00006" summary="demo">
+      <created>1556013641675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556013641675</updated>
+    </task>
+    <task id="LOCAL-00007" summary="demo">
+      <created>1556192034240</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556192034240</updated>
+    </task>
+    <task id="LOCAL-00008" summary="demo">
+      <created>1556250479180</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556250479180</updated>
+    </task>
+    <task id="LOCAL-00009" summary="demo">
+      <created>1556258823985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556258823985</updated>
+    </task>
+    <task id="LOCAL-00010" summary="修正">
+      <created>1556525388399</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556525388399</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ContactsTest_testFindAll - 2019.04.29 at 16h 05m 15s.xml">
+      <configuration name="ContactsTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ContactsTest_testFindAll - 2019.04.29 at 16h 06m 15s.xml">
+      <configuration name="ContactsTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PurchaseEntryTest_testFindAll - 2019.04.29 at 16h 06m 29s.xml">
+      <configuration name="PurchaseEntryTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PurchaseItemTest_testFindAll - 2019.04.29 at 16h 06m 39s.xml">
+      <configuration name="PurchaseItemTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PurchaseOrderTest_testFindAll - 2019.04.29 at 16h 06m 50s.xml">
+      <configuration name="PurchaseOrderTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VendorItemTest_testFindAll - 2019.04.29 at 16h 07m 16s.xml">
+      <configuration name="VendorItemTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VendorPOTest_testFindAll - 2019.04.29 at 16h 07m 25s.xml">
+      <configuration name="VendorPOTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VendorTest_testFindAll - 2019.04.29 at 16h 07m 58s.xml">
+      <configuration name="VendorTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VendorPOTest_testFindAll - 2019.04.29 at 16h 08m 48s.xml">
+      <configuration name="VendorPOTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VendorPOTest_testFindAll - 2019.04.29 at 16h 09m 35s.xml">
+      <configuration name="VendorPOTest.testFindAll" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="186367000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4954955" visible="true" weight="0.14658849" />
+      <window_info id="Structure" order="1" sideWeight="0.5045045" side_tool="true" weight="0.18763326" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5045045" side_tool="true" weight="0.18763326" />
+      <window_info id="Web" order="7" sideWeight="0.5045045" side_tool="true" weight="0.18763326" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2881907" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36619717" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="7" weight="0.32969433" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" weight="0.32969433" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.20851529" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.32969433" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32969433" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32827735" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.11673774" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.19296375" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="供应商管理：供应商、关联联系人、关联商品增删改查+测试用例" />
+    <MESSAGE value="demo" />
+    <MESSAGE value="修正" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseOrderTest.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>json.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jsonObject.getString(&quot;purchaseItem&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONArray,java.util.HashMap.Node</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>jsonObject.getString(&quot;vendorCount&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONArray,java.util.HashMap.Node</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peJsonObj.getString(&quot;vendorCount&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONArray,java.util.HashMap.Node</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peJsonObj.getString(&quot;purchaseItem&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONArray,java.util.HashMap.Node</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peJsonObj.getJSONArray(&quot;purchaseItem&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONArray,java.util.HashMap.Node</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>peJsonObj.get(&quot;purchaseItem&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.alibaba.fastjson.JSONArray,java.util.HashMap.Node</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>contactsMapper.findBy(contacts);</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>contactsList</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/Contacts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="27" column="25" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/PurchaseEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="7" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/PurchaseItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="39" column="13" selection-end-line="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/PurchaseOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="33" column="7" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/VendorEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="40" column="12" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/VendorItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="70" column="25" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/ContactsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="71" column="6" selection-end-line="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/PurchaseEntryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="62" column="11" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/PurchaseItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="57" column="7" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/PurchaseOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="49" column="7" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/VendorItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="39" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/VendorPOService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="28" column="7" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/service/VendorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="58" column="73" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/vo/VendorItemVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="33" column="7" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/VendorPOController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="119" column="42" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/PurchaseOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="86" column="46" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/PurchaseItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="81" column="46" selection-end-line="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/PurchaseEntryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="69" column="27" selection-end-line="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/ContactsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="149" column="13" selection-end-line="161" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/VendorItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="36" column="32" selection-end-line="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/controller/VendorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="36" column="28" selection-end-line="125" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/utils/DemoUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/main/java/com/msyt/utils/CommonResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/ContactsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="45" column="7" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/PurchaseEntryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="78" column="94" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/PurchaseItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="58" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/VendorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="92" column="16" lean-forward="true" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/VendorPOServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="116" column="55" selection-end-line="124" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/VendorItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="125" column="84" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/VendorItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="75" column="9" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/VendorPOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/mapper/VendorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="59" column="26" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/ContactsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="115" column="13" selection-end-line="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/PurchaseEntryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="112" column="117" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/PurchaseItemServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="109" column="61" selection-end-line="170" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/java/com/msyt/service/impl/PurchaseOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="99" column="96" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/ContactsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2594">
+          <caret line="155" column="38" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/PurchaseEntryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="227" column="46" selection-start-line="227" selection-start-column="46" selection-end-line="227" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/PurchaseItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3734">
+          <caret line="265" column="37" selection-start-line="265" selection-start-column="37" selection-end-line="265" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/PurchaseOrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1283">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/VendorItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3677">
+          <caret line="246" column="22" selection-start-line="246" selection-start-column="22" selection-end-line="246" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/VendorPOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/VendorItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseOrderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseItemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/PurchaseEntryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2945">
+          <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/ContactsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/VendorPOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-provider/src/main/resources/mapper/VendorMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-api/src/main/java/com/msyt/entity/VendorPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ht-consumer/src/test/java/com/msyt/VendorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>ht-api:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>ht-provider</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

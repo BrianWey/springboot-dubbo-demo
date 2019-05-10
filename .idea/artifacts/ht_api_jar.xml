@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ht-api:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ht_api_jar</output-path>
+    <root id="archive" name="ht-api.jar">
+      <element id="module-output" name="ht-api" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.6/lombok-1.16.6.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

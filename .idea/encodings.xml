@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/ht-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ht-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ht-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ht-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/项目说明.txt" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

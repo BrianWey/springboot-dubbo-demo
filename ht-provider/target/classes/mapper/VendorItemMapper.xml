@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.VendorItemMapper" >
+    <resultMap id="VendorItemResultMapper" type="com.msyt.entity.VendorItem" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="item_code" property="itemCode" jdbcType="VARCHAR" />
+        <result column="item_name" property="itemName" jdbcType="VARCHAR" />
+        <result column="supply_price" property="supplyPprice" jdbcType="INTEGER" />
+        <result column="stock" property="stock" jdbcType="INTEGER" />
+        <result column="currency" property="currency" jdbcType="VARCHAR" />
+        <result column="ship_day" property="shipDay" jdbcType="INTEGER" />
+        <result column="category" property="category" jdbcType="VARCHAR" />
+        <result column="brand" property="brand" jdbcType="VARCHAR" />
+        <result column="specs" property="specs" jdbcType="VARCHAR" />
+        <result column="bar_code" property="barCode" jdbcType="VARCHAR" />
+        <result column="origin" property="origin" jdbcType="VARCHAR" />
+        <result column="item_desc" property="itemDesc" jdbcType="VARCHAR" />
+        <result column="vendor_idx" property="vendorId" jdbcType="INTEGER" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="expiry_time" property="expiryTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <resultMap id="VendorItemVoResultMapper" type="com.msyt.vo.VendorItemVo" >
+        <result column="vendor_idx" property="vendorId" jdbcType="INTEGER" />
+        <result column="vendor_name" property="vendorName" jdbcType="VARCHAR" />
+        <result column="address" property="address" jdbcType="VARCHAR" />
+        <result column="country" property="country" jdbcType="VARCHAR" />
+        <result column="city" property="city" jdbcType="VARCHAR" />
+        <result column="item_id" property="itemId" jdbcType="INTEGER" />
+        <result column="item_code" property="itemCode" jdbcType="VARCHAR" />
+        <result column="item_name" property="itemName" jdbcType="VARCHAR" />
+        <result column="supply_price" property="supplyPprice" jdbcType="INTEGER" />
+        <result column="stock" property="stock" jdbcType="INTEGER" />
+        <result column="currency" property="currency" jdbcType="VARCHAR" />
+        <result column="ship_day" property="shipDay" jdbcType="INTEGER" />
+        <result column="category" property="category" jdbcType="VARCHAR" />
+        <result column="brand" property="brand" jdbcType="VARCHAR" />
+        <result column="specs" property="specs" jdbcType="VARCHAR" />
+        <result column="bar_code" property="barCode" jdbcType="VARCHAR" />
+        <result column="origin" property="origin" jdbcType="VARCHAR" />
+        <result column="item_desc" property="itemDesc" jdbcType="VARCHAR" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="expiry_time" property="expiryTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        version, status,item_code, item_name, supply_price, stock,currency,ship_day,category,brand,specs,bar_code,origin,item_desc,vendor_idx, create_time, update_time,expiry_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        #{version}, #{status},#{itemCode}, #{itemName}, #{supplyPprice}, #{stock},#{currency}, #{shipDay},#{category}, #{brand}, #{specs},#{barCode},#{origin},#{itemDesc}, #{vendorId}, #{createTime}, #{updateTime}, #{expiryTime}
+    </sql>
+
+    <select id="findAll" resultMap="VendorItemResultMapper">
+        SELECT idx,
+            <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor_item
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.VendorItem" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_vendor_item (<include refid="Base_Column_fields" />)
+        values (<include refid="Base_Column_fields_value" />)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_vendor_item where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.VendorItem" >
+        update tb_vendor_item
+        <set >
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="itemCode != null" >
+                item_code = #{itemCode},
+            </if>
+            <if test="itemName != null" >
+                item_name = #{itemName},
+            </if>
+            <if test="supplyPprice != null" >
+                supply_price = #{supplyPprice},
+            </if>
+            <if test="stock != null" >
+                stock = #{stock},
+            </if>
+            <if test="currency != null" >
+                currency = #{currency},
+            </if>
+            <if test="shipDay != null" >
+                ship_day = #{shipDay},
+            </if>
+            <if test="category != null" >
+                category = #{category},
+            </if>
+            <if test="brand != null" >
+                brand = #{brand},
+            </if>
+            <if test="specs != null" >
+                specs = #{specs},
+            </if>
+            <if test="barCode != null" >
+                bar_code = #{barCode},
+            </if>
+            <if test="origin != null" >
+                origin = #{origin},
+            </if>
+            <if test="itemDesc != null" >
+                item_desc = #{itemDesc},
+            </if>
+            <if test="vendorId != null" >
+                vendor_idx = #{vendorId},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+            <if test="expiryTime != null" >
+                expiry_time = #{expiryTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="VendorItemResultMapper">
+        SELECT idx,
+            <include refid="Base_Column_fields" />
+        FROM
+            tb_vendor_item
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.VendorItem"  resultMap="VendorItemResultMapper">
+        SELECT
+        idx, <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor_item
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="itemCode != null and itemCode !=''" >
+                and item_code = #{itemCode}
+            </if>
+            <if test="itemName != null and itemName !=''" >
+                and item_name = #{itemName}
+            </if>
+            <if test="supplyPprice != null and supplyPprice !=''" >
+                and supply_price = #{supplyPprice}
+            </if>
+            <if test="stock != null and stock !=''" >
+                and stock = #{stock}
+            </if>
+            <if test="currency != null and currency !=''" >
+                and currency = #{currency}
+            </if>
+            <if test="shipDay != null and shipDay !=''" >
+                and ship_day = #{shipDay}
+            </if>
+            <if test="category != null and category !=''" >
+                and category = #{category}
+            </if>
+            <if test="brand != null and brand !=''" >
+                and brand = #{brand}
+            </if>
+            <if test="specs != null and specs !=''" >
+                and specs = #{specs}
+            </if>
+            <if test="barCode != null and barCode !=''" >
+                and bar_code = #{barCode}
+            </if>
+            <if test="origin != null and origin !=''" >
+                and origin = #{origin}
+            </if>
+            <if test="itemDesc != null and itemDesc !=''" >
+                and item_desc = #{itemDesc}
+            </if>
+            <if test="vendorId != null and vendorId !=''" >
+                and vendor_idx = #{vendorId}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+            <if test="expiryTime != null and expiryTime !=''" >
+                and expiry_time = #{expiryTime}
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteByVendorId" parameterType="java.lang.Integer">
+        delete from tb_vendor_item where vendor_idx = #{vendorId}
+    </delete>
+
+    <select id="findByVendorId" resultMap="VendorItemResultMapper">
+        SELECT idx,
+            <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor_item
+        WHERE vendor_idx = #{vendorId}
+    </select>
+
+    <select id="findByItemIds" resultMap="VendorItemVoResultMapper">
+        SELECT
+        v.idx vendorId,
+        v.vendor_name,
+        v.address,
+        v.country,
+        v.city,
+        vi.idx itemId,
+        vi.item_code,
+        vi.item_name,
+        vi.supply_price,
+        vi.stock,
+        vi.currency,
+        vi.ship_day,
+        vi.category,
+        vi.brand,
+        vi.specs,
+        vi.bar_code,
+        vi.origin,
+        vi.item_desc,
+        vi.vendor_idx,
+        vi.create_time,
+        vi.update_time,
+        vi.expiry_time
+        FROM
+        tb_vendor_item vi
+        left join vendor v on v.idx = vi.vendor_idx
+        WHERE vi.idx in (
+        <foreach collection="itemIds" item="itemId" separator=",">
+            #{itemId}
+        </foreach>
+        )
+    </select>
+
+</mapper>

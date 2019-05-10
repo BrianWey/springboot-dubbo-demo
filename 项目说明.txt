@@ -1,0 +1,31 @@
+1. 项目结构
+    — ht-parent	父工程
+
+        — ht-api	接口服务
+            — entity
+            — service
+
+        — ht-consumer	消费者端
+            — controller
+            — utils
+            — Main
+
+        — ht-provider	生产者端
+            — constants
+            — mapper
+            — Main
+
+2. 数据库表（msyt-vendor）
+vendor：供应商表，存储供应商基本信息
+
+vendor_contacts：供应商联系人表，存储供应商关联的联系人相关数据
+
+vendor_item：供应商商品表，存储供应商关联的商品相关数据
+
+vendor_purchase_order：供应商端采购单表，存储商品采购部推送相关数据
+
+purchase_order：商品采购部采购单表，存储采购单相关数据
+
+purchase_order_entry：采购子单表，存储采购单关联的采购子单相关数据
+
+purchase_order_item：采购单商品表，存储采购单采购的商品相关数据

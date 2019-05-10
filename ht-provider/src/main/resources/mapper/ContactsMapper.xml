@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.msyt.mapper.ContactsMapper" >
+    <resultMap id="contactsResultMap" type="com.msyt.entity.Contacts" >
+        <id column="idx" property="idx" jdbcType="INTEGER" />
+        <result column="version" property="version" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="phone_num" property="phoneNum" jdbcType="VARCHAR" />
+        <result column="email" property="email" jdbcType="VARCHAR" />
+        <result column="vendor_idx" property="vendorId" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="Base_Column_fields" >
+        version,status, name, phone_num, email, vendor_idx, create_time, update_time
+    </sql>
+
+    <sql id="Base_Column_fields_value" >
+        #{version},#{status},#{name}, #{phoneNum}, #{email}, #{vendorId}, #{createTime}, #{updateTime}
+    </sql>
+    
+    <select id="findAll" resultMap="contactsResultMap">
+        SELECT idx,
+            <include refid="Base_Column_fields" />
+        FROM
+            tb_vendor_contacts
+    </select>
+
+    <insert id="insert" parameterType="com.msyt.entity.Contacts" useGeneratedKeys="true" keyProperty="id" >
+        insert into tb_vendor_contacts (<include refid="Base_Column_fields" />)
+        values (<include refid="Base_Column_fields_value" />)
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from tb_vendor_contacts where idx = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.msyt.entity.Contacts" >
+        update tb_vendor_contacts
+        <set >
+            <if test="version != null" >
+                version = #{version},
+            </if>
+            <if test="status != null" >
+                status = #{status},
+            </if>
+            <if test="name != null" >
+                name = #{name},
+            </if>
+            <if test="phoneNum != null" >
+                phone_num = #{phoneNum},
+            </if>
+            <if test="email != null" >
+                email = #{email},
+            </if>
+            <if test="vendorId != null" >
+                vendor_idx = #{vendorId},
+            </if>
+            <if test="createTime != null" >
+                create_time = #{createTime},
+            </if>
+            <if test="updateTime != null" >
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where idx = #{id}
+    </update>
+
+    <select id="find" resultMap="contactsResultMap">
+        SELECT idx,
+            <include refid="Base_Column_fields" />
+        FROM
+            tb_vendor_contacts
+        WHERE idx = #{id}
+    </select>
+
+    <select id="findBy" parameterType="com.msyt.entity.Contacts"  resultMap="contactsResultMap">
+        SELECT
+            idx, <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor_contacts
+        <where >
+            <if test="id != null and id !=''" >
+                and idx = #{id}
+            </if>
+            <if test="version != null and version !=''" >
+                and version = #{version}
+            </if>
+            <if test="status != null and status !=''" >
+                and status = #{status}
+            </if>
+            <if test="name != null and name !=''" >
+                and name = #{name}
+            </if>
+            <if test="phoneNum != null and phoneNum !=''" >
+                and phone_num = #{phoneNum}
+            </if>
+            <if test="email != null and email !=''" >
+                and email = #{email}
+            </if>
+            <if test="vendorId != null and vendorId !=''" >
+                and vendor_idx = #{vendorId}
+            </if>
+            <if test="createTime != null and createTime !=''" >
+                and create_time = #{createTime}
+            </if>
+            <if test="updateTime != null and updateTime !=''" >
+                and update_time = #{updateTime}
+            </if>
+        </where>
+    </select>
+
+    <insert id="batchAdd" parameterType="java.util.List">
+        insert into tb_vendor_contacts (<include refid="Base_Column_fields" />)
+        values
+        <foreach collection="contactsList" item="contacts" index="index" separator=",">
+            (#{contacts.version},
+            #{contacts.status},
+            #{contacts.name},
+            #{contacts.phoneNum},
+            #{contacts.email},
+            #{contacts.vendorId},
+            #{contacts.createTime},
+            #{contacts.createTime})
+        </foreach>
+    </insert>
+
+    <delete id="deleteByVendorId" parameterType="java.lang.Integer">
+        delete from tb_vendor_contacts where vendor_idx = #{vendorId}
+    </delete>
+
+    <select id="findByVendorIds" resultMap="contactsResultMap">
+        SELECT idx,
+            <include refid="Base_Column_fields" />
+        FROM
+            tb_vendor_contacts
+        WHERE vendor_idx in (
+        <foreach collection="vendorIds"  item="vendorId" separator=",">
+            #{vendorId}
+        </foreach>
+        )
+    </select>
+
+    <select id="findByVendorId" resultMap="contactsResultMap">
+        SELECT idx,
+        <include refid="Base_Column_fields" />
+        FROM
+        tb_vendor_contacts
+        WHERE vendor_idx = #{vendorId}
+    </select>
+
+    <delete id="batchDelete"  parameterType = "java.util.List">
+        delete from tb_vendor_contacts where vendor_idx in(
+        <foreach collection="vendorIdList"  item="vendorId" separator=",">
+            #{vendorId}
+        </foreach>
+        )
+    </delete>
+
+</mapper>
+
